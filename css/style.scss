@@ -1,0 +1,30 @@
+// -------------------Include Fonts Here-----------------
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+@mixin set_flexContainer($flex_direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: $flex_direction;
+}
+// -------------------Screen Sizes-----------------
+
+$Desktop:1200px;
+$Tablets:768px;
+$Mobiles:767px;
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+@import "_desktop.scss";
+@import "_mobile.scss";
+@import "_tablet.scss";
+
+
+

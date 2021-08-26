@@ -1,0 +1,480 @@
+// @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+// @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+// @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+// @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+// @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+// @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+// $Desktop:1200px;
+// $Tablets:768px;
+// $Mobiles:767px;
+@media (min-width:$Desktop) { /* big landscape tablets, laptops, and desktops */ 
+    // --------------start index.html-----------------
+    nav{
+        margin-top: 1em;
+        ul a {padding: 1em; font-size: medium;}
+        a img{width: 50%;}
+    }
+    .header {
+        height: 100vh;
+        &::after{
+           content: '';
+           background: radial-gradient(#fff,#ffd6d6);
+           position: absolute;
+           top: 0;
+           left:0;
+           height: 100%;
+           width: 100%;
+           opacity: 0.7;
+           z-index: -1;
+        }
+        .row{
+            transform: translateY(-10%);        }
+        h1{
+            font-weight: 700;
+            letter-spacing: 0.05rem;
+        }
+        p{
+            line-height: 1.7em;
+            margin-top: 2em;
+            font-size: small;
+            color: #7E706D;
+        }
+        button{
+               background-color: #FF6138;
+               border-radius: 23px;
+               padding: 1em;
+               font-size: medium;
+               transition: 0.3s ease all;
+               margin-top: 0.75em;
+               &:hover{
+                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+                background-color: #8d270e;
+              }
+            }
+    }
+    #three-col-cards{
+        img{width:100%;
+        transition: 0.3s ease box-shadow;}
+        img:hover{
+            box-shadow: 3px 3px 2px 2px rgb(109, 89, 89);
+        }
+    }
+    .featured{
+        .row{
+            margin: 0 auto;
+            width: 100%;
+            .heading h1{
+                font-weight: 700;
+                position: relative;
+                z-index: 1;
+                margin-top: 1.0em;
+                &:after{
+                    content: '';
+                    background: #ff523b;
+                    border: 0.5px solid #8d270e ;
+                    position: absolute;
+                    bottom: 0;
+                    left:50%;
+                    height: 5%;
+                    margin-top: 1em;
+                    transform: translateX(-50%);
+                    width: 10%;
+                    z-index: -1;
+                    border-radius: 15%;
+                }
+            }
+        .card{
+            margin-top: 1em;
+            width: 101%;
+            transition: 0.5s ease all;
+            &:hover{
+                width: 100%;
+                transform: translateY(-3%);
+                box-shadow: 3px 3px 2px 2px rgb(109, 89, 89);
+            }
+        }
+        .stars{color: orange;}
+        }
+    }
+    .latest{
+        .row{
+            margin: 0 auto;
+            width: 100%;
+        }
+        .heading h1{
+            font-weight: 700;
+            margin-top: 1em;
+            position: relative;
+            z-index: 1;
+
+            &::after{
+                content: '';
+                background: #ff523b;
+                border: 0.5px solid #8d270e ;
+                position: absolute;
+                bottom: 0;
+                left:50%;
+                height: 5%;
+                margin-top: 1em;
+                transform: translateX(-50%);
+                width: 10%;
+                z-index: -1;
+                border-radius: 15%;
+            }
+        }
+        .card{
+            width: 100%;
+            transition: 0.5s ease all;
+            margin-top: 1.5rem;
+        }
+        .stars{
+            color: orange;
+        }
+        .card:hover{
+            width: 100%;
+            transform: translateY(-3%);
+            box-shadow: 3px 3px 2px 2px rgb(109, 89, 89);
+        }
+    }
+    .offer{
+        margin-top: 2em;
+        background: radial-gradient(#fff,#ffd6d6);
+        .image{
+            img{
+                width: 80%;
+                padding: 60px;
+            }
+        }
+        .text{
+            h4{
+                font-size: medium;
+            }
+            h1{
+                font-weight: 700;
+                font-size: 3rem;
+                margin: 0.75em 0;
+            }
+            p{
+                width: 80%;
+                font-size: medium;
+                margin: 0.85em 0;
+                padding: 0.5em 0;
+            }
+            button{
+                background-color: #FF6138;
+                border-radius: 23px;
+                padding: 0.5em 2em ;
+                font-size: medium;
+                transition: 0.3s ease all;
+                margin-top: 0.75em;
+                &:hover{
+                    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+                      background-color: #8d270e;
+              }
+            }
+        }
+    }
+    .testimonial{
+        margin: 0 auto;
+        .card{
+            width:100%;
+            margin:0.9em  auto;
+            transition: 0.3s ease all;
+            &:hover{
+                width: 100%;
+                transform: translateY(-5%);
+                box-shadow: 3px 3px 2px 2px rgb(109, 89, 89);
+            }
+        }
+        .quote{
+            color: hsl(12, 100%, 48%);
+            margin: 1em 0;
+        }
+        p{
+            font-size: small;
+            margin: 1em 0;
+            padding: 0.5em;
+        }
+        .stars{
+            color: hsl(12, 100%, 48%);
+            padding: 0.5em;
+        }
+        img{
+            width: 30%;
+            margin: 0 auto;
+        }
+        h5{
+            font-weight: 700;
+            margin: 1em 0;
+        }
+    }
+    .brands{
+        img{
+        filter: grayscale(100%);
+        width: 100%;
+        margin-top: 2em;
+        }
+    }
+    .footer{
+        height:auto;
+        background-color: black;
+        color: white;
+        .playstore-logo {
+            width: 100%;
+            img{
+                width: 35%;
+            }
+        }
+        .logo-white{
+            width: 100%;
+            margin-top: 1.5em;
+            img{
+                width: 50%;
+            }
+        }
+        .visibleMob{
+            display: none;
+        }
+        h4{font-weight: 700;}
+    }
+    // --------------end index.html--------------------
+    // |
+    // |
+    // --------------start product.html-----------------
+    .product-featured{
+        .heading h4{
+            font-weight: 700;
+            margin-top: 1.0em;
+            font-size: 2rem;
+        }
+        .dropdown button{
+            border: 1px solid black;
+            width: 50%;
+        }
+        .btn-pg button{
+            border: 1px solid black;
+            padding: 0.5em;
+            width: 4%;
+            transition: 0.3s ease all;
+            &:hover{
+                box-shadow: 3px 3px 2px 2px rgb(109, 89, 89);
+                background-color: rgb(109, 109, 236);
+            }
+        }
+        }
+     // --------------end product.html--------------------
+    // |
+    // |
+    // --------------start product-details.html-----------------
+    .product-details{
+        .main-product{
+            margin-right: -0.70em;
+        }
+        .product-text {
+            background-color: rgb(224, 224, 224);
+        }
+        .product-text .dropdown button{
+            border: 1px solid rgb(185, 142, 142);
+            width: 20%;
+            margin-top: 1.5em;
+            padding: 1em;
+        }
+        .product-text .dropdown {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        .product-text  .cart-button{
+            background-color: #FF6138;
+            border-radius: 23px;
+            font-size: medium;
+            transition: 0.3s ease all;
+            margin-top: 1em;
+            margin-left: 3em;
+            &:hover{
+             box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+             background-color: #8d270e;
+           }
+         }
+         input{
+             height: 70%;
+             width: 5em;
+             margin-left: 2em;
+             margin-top: 1em;
+             text-align: center;
+             border-radius: 16px;
+             padding: 0.5em;
+         }
+         .product-text h1{
+            font-style: bold;
+            font-weight: 700;
+            font-size: 3.5rem;
+        }
+         .product-text h3{
+             font-style: bold;
+             font-weight: 700;
+             margin-bottom: 1em;
+             i{
+                 color: #FF6138;
+             }
+             p{
+                 text-align: justify;
+             }
+         }
+    }
+    // --------------end product-details.html--------------------
+    // |
+    // |
+    // --------------start cart.html-----------------
+    .cart{
+
+        .cart-header{
+            background-color: #FF6138;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            h4{
+                padding: 0.15em ;
+            }
+        }
+
+        .cart-image{
+            margin-bottom: 1em;
+        }
+
+        .cart-text{
+            margin-left: 0.75em;
+            h4{
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            a{
+                color: #ff523b;
+            }
+
+
+
+        }
+
+        .cart-quantity{
+            text-align: center;
+            width: 23%;
+            vertical-align: middle;
+        }
+
+        hr{
+            width: 40%;
+            text-align: right;
+            border: 3px solid #ff523b;
+
+        }
+        .cart-tax{
+            margin-bottom: 1em;
+        }
+
+    }
+    // --------------end cart.html--------------------
+    // |
+    // |
+    // --------------start account.html-----------------
+    .account{
+        &::after{
+            content: '';
+            background: radial-gradient(#fff,#ffd6d6);
+            position: absolute;
+            top: 0;
+            left:0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.7;
+            z-index: -1;
+         }
+
+         h1{
+             font-style: bold;
+             font-weight: 700;
+
+         }
+
+
+
+        .login{
+            margin-right: 2em;
+            padding: 1em;
+
+            transform: translateY(-6.5%);
+            h3{
+                position: relative;
+                margin-bottom: 1em;
+                &::after{
+                    content: '';
+                    background-color: #ff523b;
+                    height: 1%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;                   
+                    border: 1px solid #8d270e ;
+                    margin-top: 1.45em;
+                    width: 20%;
+                }
+            }
+
+            
+        }
+
+        .register{
+            margin-right: 2em;
+            padding: 1em;
+
+            transform: translateY(-6.5%);
+            h3{
+                position: relative;
+                margin-bottom: 1em;
+                &::after{
+                    content: '';
+                    background-color: #ff523b;
+                    height: 1%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;                   
+                    border: 1px solid #8d270e ;
+                    margin-top: 1.45em;
+                    width: 28%;
+                }
+            }
+
+            
+        }
+        input{
+            margin-bottom:1em ;
+            font-size: 0.85rem;
+        }
+        h3{
+            font-style: bold;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .fpass{
+            font-size: 0.75rem;
+            margin-top: 1em;
+        }
+        button{
+            background-color: #FF6138;
+            border-radius: 23px;
+            padding: 0.5em;
+            font-size: medium;
+            transition: 0.3s ease all;
+            width: 80%;
+            margin-top: 0.75em;
+            color: white;
+            &:hover{
+             box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+             background-color: #8d270e;
+           }
+         }
+    }
+
+
+
+
+    // --------------end account.html--------------------
+
+}
